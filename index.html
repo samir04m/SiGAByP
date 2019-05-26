@@ -9,26 +9,50 @@
     <link type="text/css" rel="stylesheet" href="css/estilos.css"/>
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <script type="text/javascript" src="js/fontawesome-all.js"></script>
+
 </head>
-<body>
-    <nav class="blue">
-        <div class="nav-wrapper">
-            <div class="container">
-                <a href="#" class="brand-logo"><i class="fas fa-bicycle"></i> SiGAByP</a>
+<body id="bg-index">
+    <div class="navbar-fixed">
+        <nav class="blue">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo"><i class="fas fa-bicycle fa-lg"></i> SiGAByP</a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="views/login.html">Login</a></li>
-                    <li><a href="views/registro.html">Registro</a></li>
-                    <li><a href="views/mapa.html">Mapa</a></li>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="views/login.html">Login</a></li>
+                        <li><a href="views/registro.html">Registro</a></li>
+                        <li><a href="views/mapa.html">Mapa</a></li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <main>
         <div class="container">
+            <br>
+            <div class="carousel carousel-slider center" data-indicators="true">
+                <div class="carousel-fixed-item center">
+                    <a href="" class="btn waves-effect white black-text darken-text-2">button</a>
+                </div>
+                <div class="carousel-item white-text" href="#one!" id="slide1">
+                    <h1>Bienvenido</h1>
+                    <big>
+                        Sistema de información para la Gestión del Alquiler de Bicicletas y Patinetas.
+                        <p class="white-text">
+                        </p>
+
+                    </big>
+                </div>
+                <div class="carousel-item white-text" href="#two!" id="slide2">
+
+                </div>
+                <div class="carousel-item white-text" href="#three!" id="slide3">
+
+                </div>
+            </div>
+
             <div class="panel2">
                 <center><big><b>Casas de Arriendo</b></big></center>
                 <div class="line2"></div>
@@ -67,7 +91,7 @@
                     </div>
                 </div>
                 <div class="right-align">
-                    <a href="" class="btn btn-rounded blue waves-effect">Ver todos <i class="fas fa-arrow-right"></i></a>
+                    <a href="views/casas.html" class="btn btn-rounded blue waves-effect">Ver todos <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

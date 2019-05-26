@@ -12,12 +12,31 @@ body {
     font-size: 18px;
 }
 
+#bg-index{
+    background-image: url("../images/funky-lines.png");
+}
+
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+#slide1 {
+    background-image: url("../images/slide3.jpg");
+}
+#slide2 {
+    background-image: url("../images/slide1.jpg");
+}
+#slide3 {
+    background-image: url("../images/slide2.jpg");
+}
+
 
 .panel2 {
     background-color: lightgrey;
     border-radius: 20px;
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0 20px 0;
 }
 
 .btn-rounded {

@@ -3,14 +3,16 @@ $(document).ready(function(){
      $('.carousel.carousel-slider').carousel({fullWidth: true});
 
      $('.modal').modal();
-     $('#modal_login').modal('open');
+     $('select').material_select();
+
+     $("#redirect_login").click(function() {
+         location.href = this.href;
+     });
 
      $("#entrar").click(function(){
         if (validar_login()) {
-            window.location ="/casas.html";
-            // location.href ="/casas.html";
-            // $("#login_img").removeClass("hide");
             $("#login_error").addClass("hide");
+            $("#redirect_login").click();
         }else{
             $("#login_img").addClass("hide");
             $("#login_error").removeClass("hide");

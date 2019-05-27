@@ -12,7 +12,7 @@ body {
     font-size: 18px;
 }
 
-#bg-index{
+.bg-patron{
     background-image: url("../images/funky-lines.png");
 }
 

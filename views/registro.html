@@ -16,7 +16,7 @@
         <div class="container">
             <div class="card-panel">
                 <div class="row">
-                    <div class="col s12 m7">
+                    <div class="col s12 m6">
                         <div class="col s12 center">
                             <b>Formulario de Registro</b>
                         </div>
@@ -60,10 +60,33 @@
                         </div>
 
                     </div>
-                    <div class="col s12 m5">
-
+                    <div class="col s12 offset-m1 m5">
+                        <div class="col s12 center">
+                            <b>Medio de Pago</b>
+                            <br><br>
+                        </div>
+                        <div class="row">
+                            <small>Ingrese los datos de su tarjeta</small><br><br>
+                            <div class="input-field col s12">
+                                <i class="far fa-credit-card prefix fa-xs"></i>
+                                <input id="ncard" type="number" class="validate" placeholder="XXXX XXXX XXXX XXXX">
+                                <label for="ncard">Numero de Tarjeta</label>
+                            </div>
+                            <div class="input-field col s7">
+                                <i class="far fa-calendar-alt prefix"></i>
+                                <input id="mes" type="text" class="validate" placeholder="MM/AA">
+                                <label for="mes">Fecha Vencimiento</label>
+                            </div>
+                            <div class="input-field col s5">
+                                <i class="fas fa-lock prefix"></i>
+                                <input id="cvc" type="number" class="validate">
+                                <label for="cvc">CVC</label>
+                            </div>
+                        </div>
                     </div>
-
+                </div>
+                <div class="row center">
+                    <a href="../index.html" class="btn waves-effect blue">Guardar</a>
                 </div>
             </div>
         </div>

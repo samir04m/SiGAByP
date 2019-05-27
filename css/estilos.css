@@ -13,7 +13,7 @@ body {
 }
 
 .bg-patron{
-    background-image: url("../images/funky-lines.png");
+    background-image: url("../images/interlaced.png");
 }
 
 .carousel-item {
@@ -57,4 +57,11 @@ body {
     font-size: 16px;
     line-height: 1.2;
     margin-top: 10px;
+    color: #0097e2 !important;
+}
+.texto-card-2 {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #424242 !important;
 }

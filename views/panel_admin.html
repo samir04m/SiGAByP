@@ -108,6 +108,59 @@
                         </center>
                     </div>
             </div>
+            <div class="card-panel">
+                <div class="row">
+                    <center><big>Vehiculos</big></center>
+                    <table class="admin-table striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Tipo</th>
+                                <th>Lugar</th>
+                                <th>Borrar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>123</td>
+                                <td>Bicicleta</td>
+                                <td>Punto N° 13</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>124</td>
+                                <td>Bicicleta</td>
+                                <td>Punto N° 13</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>125</td>
+                                <td>Patineta</td>
+                                <td>Punto N° 13</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>126</td>
+                                <td>Patineta</td>
+                                <td>Punto N° 13</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                        <center>
+                            <br>
+                            <a href="#vehiculo" class="modal-trigger btn blue btn-rounded">
+                                agregar <i class="fas fa-plus"></i></a>
+                        </center>
+                    </div>
+            </div>
+
         </div>
 
     </main>
@@ -149,6 +202,7 @@
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">GUardar</a>
         </div>
     </div>
+
     <div id="operarios" class="modal">
         <div class="modal-content">
             <h5>Crear un Operario</h5><br>
@@ -175,6 +229,36 @@
                     </select>
                     <label for="sitio">A cargo de</label>
                 </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">GUardar</a>
+        </div>
+    </div>
+
+    <div id="vehiculo" class="modal">
+        <div class="modal-content">
+            <h5>Crear un punto de arriendo</h5><br>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <select name="tipo">
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="">Bicicleta</option>
+                        <option value="">Patineta</option>
+                    </select>
+                    <label for="tipo">Tipo de vehiculo</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <select name="sitio">
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="">Punto N° 12</option>
+                        <option value="">Punto N° 13</option>
+                        <option value="">Punto N° 14</option>
+                        <option value="">Punto N° 15</option>
+                    </select>
+                    <label for="sitio">Lugar</label>
+                </div>
+
             </div>
         </div>
         <div class="modal-footer">

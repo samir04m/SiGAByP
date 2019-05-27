@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador - SiGAByP</title>
+
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
+    <script type="text/javascript" src="../js/fontawesome-all.js"></script>
+</head>
+<body class="blue darken-1">
+
+    <main>
+        <div class="container">
+            <h4 class="white-text">Panel de Administrador</h4>
+            <div class="card-panel">
+                <div class="row">
+                    <center><big>Puntos de Arriendo</big></center>
+                    <table class="admin-table striped">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Barrio</th>
+                                <th>Borrar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>11</td>
+                                <td>Los Laureles</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Santa Maria</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Rosales</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Miramar</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                        <center>
+                            <br>
+                            <a href="#punto_arriendo" class="modal-trigger btn blue btn-rounded">
+                                agregar <i class="fas fa-plus"></i></a>
+                        </center>
+                    </div>
+            </div>
+            <div class="card-panel">
+                <div class="row">
+                    <center><big>Operarios</big></center>
+                    <table class="admin-table striped">
+                        <thead>
+                            <tr>
+                                <th>Cedula</th>
+                                <th>Nombre</th>
+                                <th>A cargo de</th>
+                                <th>Borrar</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1.100.122.090</td>
+                                <td>Juan Alvarez</td>
+                                <td>Punto N° 11</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.120.102.090</td>
+                                <td>Andres Mercado</td>
+                                <td>Punto N° 12</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1.122.151.090</td>
+                                <td>Luis Perez</td>
+                                <td>Punto N° 13</td>
+                                <td><a href="" class="modal-trigger red-text"><i class="fas fa-trash"></i> Borrar </a>
+                                </td>
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                        <center>
+                            <br>
+                            <a href="#operarios" class="modal-trigger btn blue btn-rounded">
+                                agregar <i class="fas fa-plus"></i></a>
+                        </center>
+                    </div>
+            </div>
+        </div>
+
+    </main>
+    <br>
+    <footer class="page-footer blue darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">SiGAByP</h5>
+                    <p class="grey-text text-lighten-4">Sistema de información para la Gestión del Alquiler de Bicicletas y Patinetas.</p>
+                </div>
+            <div class="col l4 offset-l1 s12">
+                <h5 class="white-text">Desarrolladores</h5>
+                <ul>
+                      <li><i class="fas fa-user"></i> Cristian Vergel</li>
+                      <li><i class="fas fa-user"></i> Mario Ospino</li>
+                      <li><i class="fas fa-user"></i> Hallel Vargas</li>
+                      <li><i class="fas fa-user"></i> Geraldine Granados</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                Unimagdalena © 2019 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <div id="punto_arriendo" class="modal">
+        <div class="modal-content">
+            <h5>Crear un punto de arriendo</h5><br>
+            <div class="input-field">
+                <input type="text" name="barrio">
+                <label for="barrio">Barrio</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">GUardar</a>
+        </div>
+    </div>
+    <div id="operarios" class="modal">
+        <div class="modal-content">
+            <h5>Crear un Operario</h5><br>
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <input type="text" name="nombre">
+                    <label for="nombre">Nombre</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input type="text" name="apellido">
+                    <label for="apellido">Apellido</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <input type="number" name="Cedula">
+                    <label for="Cedula">Número de Cedula</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <select name="sitio">
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="">Punto N° 12</option>
+                        <option value="">Punto N° 13</option>
+                        <option value="">Punto N° 14</option>
+                        <option value="">Punto N° 15</option>
+                    </select>
+                    <label for="sitio">A cargo de</label>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">GUardar</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
